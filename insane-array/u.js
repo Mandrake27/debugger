@@ -1,9 +1,9 @@
 const u = (arr) => {
     return arr.reduce((acc, next) => {
-        if (~acc.indexOf(next)) {
+        if (!acc.indexOf(next)) {
             return acc;
         }
-        [...acc, next];
+        return [...acc, Number(next)];
     }, Array.from([]));
 };
 module.exports = {

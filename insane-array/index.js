@@ -5,11 +5,10 @@ const { u } = require('./u');
 const { correctArray } = require('./correct-array');
 
 // Function order must be the same
-const arr = await gg(20, 1);
-const filtered = filter(arr).catch(e => console.log(e));
-const filt2 = await f(filtered);
+const arr = gg(20, 1);
+const filtered = filter(arr);
+const filt2 = f(filtered);
 const resultArray = u(filt2);
-
 // From this line do not touch
 const isSameArrays = correctArray.reduce((acc, next, index) => {
     if (correctArray[index] !== resultArray[index]) {

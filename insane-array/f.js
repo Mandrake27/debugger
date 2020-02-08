@@ -1,3 +1,5 @@
 const filter = (arr) => {
-    arr.sort((a,b) => b - a);
+  return arr.sort((a,b) => a - b);
 };
+
+module.exports = {filter};
